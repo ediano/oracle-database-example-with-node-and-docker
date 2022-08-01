@@ -1,0 +1,22 @@
+version: "3.9"
+
+services:
+  oracledb:
+    image: container-registry.oracle.com/database/express:latest
+    container_name: oracledb
+    ports:
+      - "1521:1521"
+      - "5500:5500"
+    environment:
+      - ORACLE_PWD=Oracle@123
+
+  api:
+    build: .
+    container_name: api
+    tty: true
+    ports:
+      - "3000:3000"
+    environment:
+      - NODE_ENV=development
+    volumes:
+      - './:/node'

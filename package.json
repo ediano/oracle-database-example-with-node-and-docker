@@ -1,0 +1,23 @@
+{
+  "name": "oracle-database-example-with-node-and-docker",
+  "version": "1.0.0",
+  "description": "This is the basis for making a successful connection to Oracle Database, Node and Docker.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ediano/oracle-database-example-with-node-and-docker.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ediano/oracle-database-example-with-node-and-docker/issues"
+  },
+  "homepage": "https://github.com/ediano/oracle-database-example-with-node-and-docker#readme",
+  "dependencies": {
+    "oracledb": "^5.4.0"
+  }
+}
