@@ -18,11 +18,8 @@ RUN sh -c "echo /opt/oracle/instantclient_*_* > /etc/ld.so.conf.d/oracle-instant
 
 WORKDIR /node
 
-COPY package.json .
-COPY package-lock.json .
+COPY . .
 
 RUN npm i
-
-COPY . .
 
 EXPOSE 3000
